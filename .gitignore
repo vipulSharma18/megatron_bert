@@ -1,4 +1,8 @@
 checkpoints/*
+# nvidia container files
+docker-examples
+tutorials
+license.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

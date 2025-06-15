@@ -15,6 +15,7 @@ docker run --gpus all -it --rm \
   megatron_bert:latest
 ```
 
+## Model Checkpoints:
 We reused Megatron's BeRT checkpoints which can be downloaded here:
 BERT-345M-uncased:
 ```
@@ -23,6 +24,17 @@ wget --content-disposition https://api.ngc.nvidia.com/v2/models/nvidia/megatron_
 BERT-345M-cased:
 ```
 wget --content-disposition https://api.ngc.nvidia.com/v2/models/nvidia/megatron_bert_345m/versions/v0.1_cased/zip -O checkpoints/megatron_bert_345m_v0.1_cased.zip
+```
+
+Vocabulary files:
+uncased:
+```
+wget https://s3.amazonaws.com/models.huggingface.co/bert/bert-large-uncased-vocab.txt -O checkpoints/bert-large-uncased-vocab.txt
+```
+
+cased:
+```
+wget https://s3.amazonaws.com/models.huggingface.co/bert/bert-large-cased-vocab.txt -O checkpoints/bert-large-cased-vocab.txt
 ```
 
 ## Bounty:
