@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "megatron"
+version = "0.1.0"
+description = "A PyTorch-based implementation of Megatron-LM for efficient large language model training"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+authors = [
+    { name = "Vipul Sharma", email = "vipuls181999@gmail.com" }
+]
+
+dependencies = [
+    "megatron-core==0.12.1",
+]
+
+[tool.setuptools]
+packages = ["megatron"]
