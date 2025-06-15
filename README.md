@@ -15,6 +15,16 @@ docker run --gpus all -it --rm \
   megatron_bert:latest
 ```
 
+We reused Megatron's BeRT checkpoints which can be downloaded here:
+BERT-345M-uncased:
+```
+wget --content-disposition https://api.ngc.nvidia.com/v2/models/nvidia/megatron_bert_345m/versions/v0.1_uncased/zip -O checkpoints/megatron_bert_345m_v0.1_uncased.zip
+```
+BERT-345M-cased:
+```
+wget --content-disposition https://api.ngc.nvidia.com/v2/models/nvidia/megatron_bert_345m/versions/v0.1_cased/zip -O checkpoints/megatron_bert_345m_v0.1_cased.zip
+```
+
 ## Bounty:
 "I have some megatron checkpoints for bert models that are entirely incompatible with hugging face. Weeks and months of debugging have led me nowhere. I'll pay someone $500 today if they can fix this. I can send the checkpoints tn"
 https://x.com/lcastricato/status/1934079505087238521
