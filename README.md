@@ -40,3 +40,8 @@ wget https://s3.amazonaws.com/models.huggingface.co/bert/bert-large-cased-vocab.
 ## Bounty:
 "I have some megatron checkpoints for bert models that are entirely incompatible with hugging face. Weeks and months of debugging have led me nowhere. I'll pay someone $500 today if they can fix this. I can send the checkpoints tn"
 https://x.com/lcastricato/status/1934079505087238521
+
+### References:
+1. https://docs.nvidia.com/megatron-core/developer-guide/latest/index.html
+2. https://github.com/huggingface/transformers/blob/main/src/transformers/models/megatron_gpt2/checkpoint_reshaping_and_interoperability.py
+3. https://huggingface.co/docs/transformers/model_doc/megatron-bert
